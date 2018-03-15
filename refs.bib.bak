@@ -1,0 +1,256 @@
+@article{ayadi2011,
+  title={Survey on speech emotion recognition: features, classification schemes and database},
+  author={Ayadi, Moataz El and Kamel, Mohamed S. and Karray, Fakhri},
+  journal={Pattern Recognition},
+  volume={44},
+  number={3},
+  pages={572-587},
+  year={2011}
+}
+
+@inproceedings{satt2017,
+  title={Efficient Emotion Recognition from Speech Using Deep Learning on Spectrograms},
+  author = {A. Satt and S. Rozenberg and R. Hoory},
+  booktitle={INTERSPEECH},
+  pages={1089-1093},
+  year={2017},
+}
+
+@article{busso2008,
+  title={IEMOCAP: Interactive emotional dyadic motion capture database},
+  author={C. Busso and M. Bulut and C. Lee and A. Kazemzadeh and E. Mower and S. Kim and J. Chang and S. Lee and S. Narayanan},
+  journal={Journal of Language Resources and Evaluation},
+  volume={42},
+  number={4},
+  pages={335-359},
+  year={2008}
+}
+
+@inproceedings{ma2017,
+  title={Speech Emotion Recognition with Emotion-Pair Based Framework Considering Emotion Distribution Information in Dimensional Emotion Space},
+  author={X. Ma and Z.Y. Wu and J., Jia and M.X. Xu and H. Meng and L.H. Cai},
+  booktitle={INTERSPEECH},
+  pages={1238-1242},
+  year={2017},
+}
+
+@article{busso2009,
+  title={Analysis of Emotionally Salient Aspects of Fundamental Frequency for Emotion Detection},
+  author={C. Busso and S. Lee and S. Narayanan},
+  journal={IEEE Transactions on Audio, Speech, and Language Processing},
+  volume={17},
+  number={4},
+  pages={582-596},
+  year={2009}
+}
+
+@article{dash1997,
+  title={Feature Selection for Classification},
+  author={M. Dash and H. Liu},
+  journal={Intelligent Data Analysis},
+  volume={1},
+  number={3},
+  pages={131-156},
+  year={1997}
+}
+
+@article{guyon2003,
+  title={An introduction to variable and feature selection},
+  author={I. Guyon and A. Elisseeff},
+  journal={Journal of machine learning research},
+  number={3},
+  pages={1157-1182},
+  year={2003}
+}
+
+@article{belhumeur1997,
+  title={Eigenfaces vs. fisherfaces: Recognition using class specific linear projection},
+  author={P.N. Belhumeur and J.P. Hespanha and D.J. Kriegman},
+  journal={ IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume={19},
+  number={7},
+  pages={711-720},
+  year={1997}
+}
+
+@article{cowie2001,
+  title={Emotion recognition in human-computer interaction},
+  author={R. Cowie and E. Douglas-Cowie and N. Tsapatsoulis},
+  journal={IEEE Signal Processing Magazine},
+  volume={18},
+  number={1},
+  pages={32-80},
+  year={2001}
+}
+
+@article{vayrynen2013,
+  title={Classifier-based learning of nonlinear feature manifold for visualization of emotional speech prosody},
+  author={E. Vayrynen and J. Kortelainen and T. Seppanen},
+  journal={IEEE Transactions on Affective Computing},
+  volume={4},
+  number={1},
+  pages={47-56},
+  year={2013}
+}
+
+@book{rabiner1978,
+  title={Digital Processing of Speech Signals},
+  author={L.R. Rabiner and R.W. Schafer},
+  publisher={Prentice Hall, Upper Saddle River, New Jersey 07458, USA},
+  year={1978}
+}
+
+@article{atal1974,
+  title={Effectiveness of linear prediction characteristics of the speech wave for automatic speaker identification and verification},
+  author={B.S. Atal},
+  journal={the Journal of the Acoustical Society of America},
+  volume={55},
+  number={6},
+  pages={1304-1312},
+  year={1974}
+}
+
+@article{davis1980,
+  title={Effectiveness of linear prediction characteristics of the speech wave for automatic speaker identification and verification Comparison of parametric representations for monosyllabic word recognition in continuously spoken sentences},
+  author={S. Davis and P. Mermelstein},
+  journal={IEEE Transactions on Acoustics, Speech, and Signal Processing},
+  volume={28},
+  number={4},
+  pages={357-366},
+  year={1980}
+}
+
+@article{gobl2003,
+  title={The role of voice quality in communicating emotion, mood and attitude},
+  author={C. Gobl and A. N. Chasaide},
+  journal={Speech Communication},
+  volume={40},
+  number={1-2},
+  pages={189-212},
+  year={2003}
+}
+
+@inproceedings{Han2014Speech,
+  title={Speech Emotion Recognition Using Deep Neural Network and Extreme Learning Machine},
+  author={Han, Kun and Yu, Dong and Tashev, Ivan},
+  booktitle={INTERSPEECH},
+  year={2014},
+}
+
+@article{ververidis2008,
+  title={Fast and accurate sequential floating forward feature selection with the Bayes classifier applied to speech emotion recognition},
+  author={D. Ververidis and C. Kotropoulos},
+  journal={Signal Processing},
+  volume={88},
+  number={12},
+  pages={2956-2970},
+  year={2008}
+}
+
+@inproceedings{ferri1993,
+    author = {F. J. Ferri and V. Kadirkamanathan and J. Kittler},
+    title = {Feature Subset Search using Genetic Algorithms},
+    booktitle = {in: IEE/IEEE Workshop on Natural Algorithms in Signal Processing, IEE},
+    publisher = {Press},
+    year = {1993}
+}
+
+@article{yu2013,
+  title={Feature Learning in Deep Neural Networks - Studies on Speech Recognition Tasks},
+  author={D. Yu and M.L. Seltzer and J. Li},
+  journal={arXiv:1301.3605},
+  year={2013}
+}
+
+@article{schlosberg1954,
+  title={Three dimensions of emotion},
+  author={H. Schlosberg},
+  journal={Psychological Review},
+  volume={61},
+  number={2},
+  pages={81-88},
+  year={1954}
+}
+
+@article{ortony1990,
+  title={What's basic about basic emotions},
+  author={A. Ortony and T.J. Turner},
+  journal={Psychological Review},
+  volume={97},
+  number={3},
+  pages={315-331},
+  year={1990}
+}
+
+@article{lee2011,
+  title={Emotion recognition using a hierarchical binary decision tree approach},
+  author={C.C. Lee and E. Mower and C. Busso and S. Lee and S. Narayanan},
+  journal={Speech Communication},
+  volume={53},
+  number={9-10},
+  pages={1162-1171},
+  year={2011}
+}
+
+@article{allwein2001,
+  title={Reducing multiclass to binary: a unifying approach for margin classifiers},
+  author={E.L. Allwein and R.E. Schapire and Y. Singer},
+  journal={The Journal of Machine Learning Research},
+  volume={1},
+  pages={113-141},
+  year={2001}
+}
+
+@article{ho1994,
+  title={Decision combination in multiple classifier systems},
+  author={T.K. Ho and J.J. Hull and S.N. Srihari},
+  journal={IEEE Trans. Pattern Anal. Machine Intell},
+  volume={16},
+  pages={66-75},
+  year={1994}
+}
+
+@article{kittler1998,
+  title={On combining classifiers},
+  author={J. Kittler and M. Hatef and R.P.W. Duin and J. Matas},
+  journal={IEEE Trans. Pattern Anal. Machine Intell},
+  volume={20},
+  number={3},
+  pages={226-239},
+  year={1998}
+}
+
+@book{lugger2008,
+  title={Psychological Motivated Multi-Stage Emotion Classification Exploiting Voice Quality Features},
+  author={M. Lugger and B. Yang},
+  publisher={Speech Recognition, France Mihelic and Janez Zibert  (Ed.), InTech, DOI: 10.5772/6383.},
+  year={2008}
+}
+
+@inproceedings{eyben2013,
+  title={Recent developments in openSMILE, the munich open-source multimedia feature extractor},
+  author={F. Eyben and F. Weninger and F. Gross},
+  booktitle={Proceedings of the 21st ACM international conference on Multimedia},
+  pages={835-838},
+  publisher={ACM New York, ISBN: 978-1-4503-2404-5 DOI:10.1145/2502081.2502224},
+  year={2013}
+}
+
+@inproceedings{xiao2007,
+  title={Automatic Hierarchical Classification of Emotional Speech},
+  author={Z. Xiao and E. Dellandrea and W. Dou and L. Chen},
+  booktitle={Proceedings of the Ninth IEEE International Symposium on Multimedia Workshops},
+  pages={291-296},
+  publisher={IEEE Computer Society Washington, DC, USA},
+  year={2007}
+}
+
+@article{mao2010,
+  title={A novel hierarchical speech emotion recognition method based on improved DDAGSVM},
+  author={Q.R. Mao and Z.Y. Zhan},
+  journal={Computer Science and Information Systems },
+  volume={7},
+  number={1},
+  pages={211-222},
+  year={2010}
+}
