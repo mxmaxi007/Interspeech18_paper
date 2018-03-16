@@ -74,7 +74,36 @@ In the field of speech emotion recognition, several studies have been carried ou
 \section{The Proposed Recognition System}
 \label{sec:recognition_system}
 
-In~\cite{satt2017}, they first split each sentence longer than 3 seconds to shorter sub-sentences of equal lengths. The part of no longer than 3 second is padded to 3 second with zero after extracting spectrograms. Each sub-sentence is assigned the emotion labeling of the corresponding whole sentence. These shorter sentences are used throughout the proposed system, where only during the testing phase they evaluate the prediction for the whole sentences by averaging the posterior probabilities of the respective sub-sentences. Although this method can reduce the difficulty for constructing neural network (ensure that the lengths of inputs are equal), some errors will also be introduced. First, it is not a good treatment to assign each sub-sentence to the emotion label of the corresponding whole sentence. The observation indicates that only a part of voice contains obvious non-neutral emotional information in the non-neutral emotional sentence. In other word, some shorter sub-sentences, which belong to a sentence with non-neutral emotion, may not contains any non-neutral emotional information. Such sub-sentences are used as the inputs for training neural network, which may lead to reduce accuracy of the model. Second, in the predicting stage, the sentence also need to split into sub-sentences and average the posterior probabilities to get the final result. This would also cause the loss of some accuracy. Our study aims to solve this problem. We first extract the spectrogram for the whole sentence, and then the spectrogram, as the input of deep neural network, is classified to the emotion categories, as shown in Figure~\ref{fig:flow}. For comparison, we use the similar spectrogram extraction setting and neural network as those used in~\cite{satt2017}.
+In~\cite{satt2017}, they first split each sentence longer than 3 seconds to shorter sub-sentences of equal lengths. The part of no longer than 3 second is padded to 3 second with zero after extracting spectrograms. Each sub-sentence is assigned the emotion labeling of the corresponding whole sentence. These shorter sentences are used throughout the proposed system, where only during the testing phase they evaluate the prediction for the whole sentences by averaging the posterior probabilities of the respective sub-sentences. Although this method can reduce the difficulty for constructing neural network (ensure that the lengths of inputs are equal), some errors will also be introduced. First, it is not a good treatment to assign each sub-sentence to the emotion label of the corresponding whole sentence. The observation indicates that only a part of voice contains obvious non-neutral emotional information in the non-neutral emotional sentence. In other word, some shorter sub-sentences, which belong to a sentence with non-neutral emotion, may not contains any non-neutral emotional information. Such sub-sentences are used as the inputs for training neural network, which may lead to reduce accuracy of the model. Second, in the predicting stage, the sentence also need to split into sub-sentences and average the posterior probabilities to get the final result. This would also cause the loss of some accuracy. 
+
+To further examine the difference between two speech segments from the same sentence, by looking at spectrograms. The Figure~\ref{fig:spectrogram} below show the spectrograms of two different speech segments (length is 3s), which from the same sentence labeled as Angry.
+
+\begin{figure}[htb]
+\begin{minipage}[b]{.48\linewidth}
+  \centering
+  \centerline{\includegraphics[width=5.0cm]{neu}}
+%  \vspace{1.5cm}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.48\linewidth}
+  \centering
+  \centerline{\includegraphics[width=5.0cm]{ang}}
+%  \vspace{1.5cm}
+\end{minipage}
+%
+\caption{Left: non-emotional spectrogram; Right: emotional spectrogram}
+\label{fig:spectrogram}
+\end{figure}
+
+In the Figure~\ref{fig:spectrogram}, the left side $-$ shows the non-emotional spectrogram; the right side $-$ shows the emotional spectrogram. The horizontal axis denotes the time, and the vertical denotes the frequency. The gray scale represents the energy strength $-$ darker colors designate higher energy. It is clearly seen that the right spectrogram shows higher energy than the left spectrogram in most of frequency range. In general, the loudness of angry voice is higher, so the difference of two spectrograms can reflect that the right speech segment looks more like a angry voice than the left speech segment. Besides, through artificial listening, we also find that the right speech segment contains more intense anger, but the left speech segment is more like a neutral speech segment. If all of two speech segments are labeled as Angry, it may cause confusion between Neutral and Angry in the model training and lead to the actual neutral speech segment is misclassified. However, when we listen to the whole sentence, the front neutral speech segment can enhance angry feeling of the back angry speech segment, the so-called angry ending without angry beginning. This problem also occurs in the other non-neutral emotions. Hence, this proves that the whole sentence as the input is more reasonable.
+
+Our study aims to solve this problem. 
+
+
+
+
+
+We first extract the spectrogram for the whole sentence, and then the spectrogram, as the input of deep neural network, is classified to the emotion categories, as shown in Figure~\ref{fig:flow}. For comparison, we use the similar spectrogram extraction setting and neural network as those used in~\cite{satt2017}.
 
 \begin{figure}[!htb]
 %\setlength{\abovecaptionskip}{-0.3cm}
