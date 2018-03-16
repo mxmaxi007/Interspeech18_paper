@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600) (preloaded format=pdflatex 2018.3.12)  14 MAR 2018 11:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600) (preloaded format=pdflatex 2018.3.12)  16 MAR 2018 20:22
 entering extended mode
 **./Ma.tex
 (Ma.tex
@@ -700,7 +700,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--69
 \OT1/ptm/m/n/9 (LPCC) [9] and Mel-frequency Cepstral Coefficients
  []
 
+[1{/Users/max/Library/Application Support/MiKTeX/texmfs/data/pdftex/config/pdft
+ex.map}
 
+
+
+]
 Underfull \hbox (badness 2653) in paragraph at lines 70--71
 \OT1/ptm/m/n/9 learning better features for automatic speech recognition
  []
@@ -715,12 +720,7 @@ Underfull \hbox (badness 8113) in paragraph at lines 70--71
 \OT1/ptm/m/n/9 log-Mel filterbank energies by using a Convolutional,
  []
 
-[1{/Users/max/Library/Application Support/MiKTeX/texmfs/data/pdftex/config/pdft
-ex.map}
 
-
-
-]
 Underfull \hbox (badness 3078) in paragraph at lines 77--78
 \OT1/ptm/m/n/9 lengths of inputs are equal), some errors will also be
  []
@@ -735,188 +735,218 @@ Underfull \hbox (badness 7133) in paragraph at lines 77--78
 \OT1/ptm/m/n/9 emotion, may not contains any non-neutral emotional
  []
 
-<flow.pdf, id=12, 250.53601pt x 302.93173pt>
-File: flow.pdf Graphic file (type pdf)
-<use flow.pdf>
-Package pdftex.def Info: flow.pdf  used on input line 83.
-(pdftex.def)             Requested size: 250.53539pt x 302.93098pt.
-
-Underfull \hbox (badness 1286) in paragraph at lines 92--93
-\OT1/ptm/m/n/9 the selected timing grid resolution, which is variable for
- []
-
-
-Underfull \hbox (badness 1184) in paragraph at lines 92--93
-\OT1/ptm/m/n/9 different sentences, and M=400 according to the selected
- []
-
-
-Underfull \hbox (badness 2103) in paragraph at lines 96--97
-[]\OT1/ptm/m/n/9 At last, for improving the computing efficiency, the
- []
-
-
-Underfull \hbox (badness 3078) in paragraph at lines 96--97
-\OT1/ptm/m/n/9 can be achieved by sorting sentence lengths. Parallel
- []
-
-[2 <./flow.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
-\OT1/ptm/m/n/9 of padding value on the output. Let
- []
-
-
-Underfull \hbox (badness 1394) in paragraph at lines 105--106
-\OML/cmm/m/it/9 S \OT1/cmr/m/n/9 = [\OML/cmm/m/it/9 x[]; x[]; :::; x[]; :::; x[
-]\OT1/cmr/m/n/9 ]$ \OT1/ptm/m/n/9 is a input sequence, where
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
-\OML/cmm/m/it/9 S\OT1/cmr/m/n/9 1 = [\OML/cmm/m/it/9 x[]; x[]; :::; x[]\OT1/cmr
-/m/n/9 ]$ \OT1/ptm/m/n/9 is the valid part and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 111--113
-\OML/cmm/m/it/9 Mask\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 S\OT1/cmr/m/n/9 )$ \OT1/ptm
-/m/n/9 is a masking matrix, and
- []
-
-
-Underfull \hbox (badness 2065) in paragraph at lines 111--113
-\OT1/ptm/m/n/9 and $\OML/cmm/m/it/9 Mask\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 S\OT1/c
-mr/m/n/9 )$\OT1/ptm/m/n/9 . Besides, convolutional layers are often
- []
-
-
-Underfull \hbox (badness 4492) in paragraph at lines 114--115
-\OT1/ptm/m/n/9 concatenation of the outputs in forward and backward
- []
-
-
-Underfull \hbox (badness 1337) in paragraph at lines 116--117
-\OT1/ptm/m/n/9 capable of learning spatial patterns, will learn effectively
- []
-
-
-Underfull \hbox (badness 2644) in paragraph at lines 116--117
-\OT1/ptm/m/n/9 spatial spectrogram patterns that represent the emotional
- []
-
-<network.pdf, id=25, 180.675pt x 227.04825pt>
-File: network.pdf Graphic file (type pdf)
-<use network.pdf>
-Package pdftex.def Info: network.pdf  used on input line 122.
-(pdftex.def)             Requested size: 180.67455pt x 227.04768pt.
-
-Underfull \hbox (badness 1199) in paragraph at lines 137--138
-\OT1/ptm/m/n/9 the experiments. The dataset was designed for studying
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
-\OT1/ptm/m/n/9 using motion capture and audio/video recording
- []
-
-[3 <./network.pdf>]
-Underfull \hbox (badness 4995) in paragraph at lines 139--140
-[]\OT1/ptm/m/n/9 Our work focuses on speaker independent emotion
- []
-
-<neu.jpg, id=40, 3613.5pt x 2409.0pt>
+<neu.jpg, id=12, 3613.5pt x 2409.0pt>
 File: neu.jpg Graphic file (type jpg)
 <use neu.jpg>
-Package pdftex.def Info: neu.jpg  used on input line 151.
+Package pdftex.def Info: neu.jpg  used on input line 84.
 (pdftex.def)             Requested size: 142.26378pt x 94.83649pt.
-<ang.jpg, id=41, 3613.5pt x 2409.0pt>
+<ang.jpg, id=13, 3613.5pt x 2409.0pt>
 File: ang.jpg Graphic file (type jpg)
 <use ang.jpg>
-Package pdftex.def Info: ang.jpg  used on input line 157.
+Package pdftex.def Info: ang.jpg  used on input line 90.
 (pdftex.def)             Requested size: 142.26378pt x 94.83649pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
 \OT1/ptm/m/n/9 spectrogram; the right side $\OMS/cmsy/m/n/9  $ \OT1/ptm/m/n/9 s
 hows the emotional
  []
 
 
-Underfull \hbox (badness 1142) in paragraph at lines 165--166
+Underfull \hbox (badness 1142) in paragraph at lines 98--99
 \OT1/ptm/m/n/9 speech segment contains more intense anger, but the left
  []
 
 
-Underfull \hbox (badness 1092) in paragraph at lines 165--166
+Underfull \hbox (badness 1092) in paragraph at lines 98--99
 \OT1/ptm/m/n/9 angry beginning. This problem also occurs in the other
  []
 
+[2 <./neu.jpg> <./ang.jpg>]
+Underfull \hbox (badness 1337) in paragraph at lines 104--105
+\OT1/ptm/m/n/9 capable of learning spatial patterns, will learn effectively
+ []
 
-Underfull \hbox (badness 3746) in paragraph at lines 167--168
+
+Underfull \hbox (badness 2644) in paragraph at lines 104--105
+\OT1/ptm/m/n/9 spatial spectrogram patterns that represent the emotional
+ []
+
+
+Underfull \hbox (badness 1286) in paragraph at lines 124--125
+\OT1/ptm/m/n/9 the selected timing grid resolution, which is variable for
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 124--125
+\OT1/ptm/m/n/9 different sentences, and M=400 according to the selected
+ []
+
+
+Underfull \hbox (badness 2103) in paragraph at lines 128--129
+[]\OT1/ptm/m/n/9 At last, for improving the computing efficiency, the
+ []
+
+
+Underfull \hbox (badness 3078) in paragraph at lines 128--129
+\OT1/ptm/m/n/9 can be achieved by sorting sentence lengths. Parallel
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+\OT1/ptm/m/n/9 of padding value on the output. Let
+ []
+
+
+Underfull \hbox (badness 1394) in paragraph at lines 133--134
+\OML/cmm/m/it/9 S \OT1/cmr/m/n/9 = [\OML/cmm/m/it/9 x[]; x[]; :::; x[]; :::; x[
+]\OT1/cmr/m/n/9 ]$ \OT1/ptm/m/n/9 is a input sequence, where
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+\OML/cmm/m/it/9 S\OT1/cmr/m/n/9 1 = [\OML/cmm/m/it/9 x[]; x[]; :::; x[]\OT1/cmr
+/m/n/9 ]$ \OT1/ptm/m/n/9 is the valid part and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--141
+\OML/cmm/m/it/9 Mask\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 S\OT1/cmr/m/n/9 )$ \OT1/ptm
+/m/n/9 is a masking matrix, and
+ []
+
+
+Underfull \hbox (badness 2065) in paragraph at lines 139--141
+\OT1/ptm/m/n/9 and $\OML/cmm/m/it/9 Mask\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 S\OT1/c
+mr/m/n/9 )$\OT1/ptm/m/n/9 . Besides, convolutional layers are often
+ []
+
+
+Underfull \hbox (badness 4492) in paragraph at lines 142--143
+\OT1/ptm/m/n/9 concatenation of the outputs in forward and backward
+ []
+
+<network.pdf, id=17, 180.675pt x 227.04825pt>
+File: network.pdf Graphic file (type pdf)
+<use network.pdf>
+Package pdftex.def Info: network.pdf  used on input line 150.
+(pdftex.def)             Requested size: 180.67455pt x 227.04768pt.
+
+Underfull \hbox (badness 1721) in paragraph at lines 156--157
+\OT1/ptm/m/n/9 unbalanced, the number of some emotional categories is
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 165--166
+\OT1/ptm/m/n/9 the experiments. The dataset was designed for studying
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
+\OT1/ptm/m/n/9 using motion capture and audio/video recording
+ []
+
+[3 <./network.pdf>]
+Underfull \hbox (badness 4995) in paragraph at lines 167--168
+[]\OT1/ptm/m/n/9 Our work focuses on speaker independent emotion
+ []
+
+
+Underfull \hbox (badness 5985) in paragraph at lines 173--174
+\OT1/ptm/m/n/9 First, we conduct emotion recognition experiments by
+ []
+
+
+Underfull \hbox (badness 3746) in paragraph at lines 173--174
 \OT1/ptm/m/n/9 network. This is to ensure that the improvement of
  []
 
 
-Underfull \hbox (badness 1325) in paragraph at lines 169--170
+Underfull \hbox (badness 1325) in paragraph at lines 175--176
 []\OT1/ptm/m/n/9 In Table 1[], we present weighted accuracy (WA) and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 \OT1/ptm/m/n/9 ``Baseline'' represents the result reported in [2],
  []
 
 
-Underfull \hbox (badness 1983) in paragraph at lines 169--170
+Underfull \hbox (badness 1983) in paragraph at lines 175--176
 \OT1/ptm/m/n/9 ``Fixed-Length'' represents the fixed-length inputs for our
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 \OT1/ptm/m/n/9 neural network, ``Variable-Length'' represents the
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 169--170
+Underfull \hbox (badness 1009) in paragraph at lines 175--176
 \OT1/ptm/m/n/9 the UA also reaches 64.22%, which is a 4.82% absolute
  []
 
 
-Underfull \hbox (badness 7963) in paragraph at lines 169--170
+Underfull \hbox (badness 7963) in paragraph at lines 175--176
 \OT1/ptm/m/n/9 (8.11% relative) improvement compared to ``Baseline''.
  []
 
 
-Underfull \hbox (badness 3547) in paragraph at lines 171--172
+Underfull \hbox (badness 3547) in paragraph at lines 177--178
 \OT1/ptm/m/n/9 network really provides improvement in the recognition
  []
 
 
-Underfull \hbox (badness 3623) in paragraph at lines 174--174
+Underfull \hbox (badness 3623) in paragraph at lines 180--180
 []\OT1/ptm/m/n/9 Table 1: |\OT1/ptm/m/it/9 Comparison of weighted accuracy (WA)
  and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--188
+Underfull \hbox (badness 10000) in paragraph at lines 192--194
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--211
+Underfull \hbox (badness 10000) in paragraph at lines 214--217
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--233
+Underfull \hbox (badness 10000) in paragraph at lines 236--239
 [][]
  []
 
+<rnn_out_const_neu_comp.jpg, id=32, 3613.5pt x 2409.0pt>
+File: rnn_out_const_neu_comp.jpg Graphic file (type jpg)
+<use rnn_out_const_neu_comp.jpg>
+Package pdftex.def Info: rnn_out_const_neu_comp.jpg  used on input line 246.
+(pdftex.def)             Requested size: 119.50148pt x 79.6553pt.
+<rnn_out_var_neu_comp.jpg, id=33, 3613.5pt x 2409.0pt>
+File: rnn_out_var_neu_comp.jpg Graphic file (type jpg)
+<use rnn_out_var_neu_comp.jpg>
+Package pdftex.def Info: rnn_out_var_neu_comp.jpg  used on input line 252.
+(pdftex.def)             Requested size: 119.50148pt x 79.6553pt.
+<rnn_out_var_ang.jpg, id=34, 3613.5pt x 2409.0pt>
+File: rnn_out_var_ang.jpg Graphic file (type jpg)
+<use rnn_out_var_ang.jpg>
+Package pdftex.def Info: rnn_out_var_ang.jpg  used on input line 263.
+(pdftex.def)             Requested size: 71.13188pt x 47.41824pt.
+<rnn_out_var_hap.jpg, id=35, 3613.5pt x 2409.0pt>
+File: rnn_out_var_hap.jpg Graphic file (type jpg)
+<use rnn_out_var_hap.jpg>
+Package pdftex.def Info: rnn_out_var_hap.jpg  used on input line 269.
+(pdftex.def)             Requested size: 71.13188pt x 47.41824pt.
+<rnn_out_var_sad.jpg, id=36, 3613.5pt x 2409.0pt>
+File: rnn_out_var_sad.jpg Graphic file (type jpg)
+<use rnn_out_var_sad.jpg>
+Package pdftex.def Info: rnn_out_var_sad.jpg  used on input line 275.
+(pdftex.def)             Requested size: 71.13188pt x 47.41824pt.
 
-Underfull \hbox (badness 3954) in paragraph at lines 239--240
+Underfull \hbox (badness 3954) in paragraph at lines 288--289
 \OT1/ptm/m/n/9 classification task from variable-length speech segments.
  []
 
-[4 <./neu.jpg> <./ang.jpg>] (Ma.bbl
+[4] (Ma.bbl
 Underfull \hbox (badness 2662) in paragraph at lines 25--28
 []\OT1/ptm/m/n/8 M. E. Ayadi, M. S. Kamel, and F. Karray, ``Survey on
  []
@@ -994,35 +1024,37 @@ Underfull \hbox (badness 4621) in paragraph at lines 150--154
 rence on
  []
 
-) [5] (Ma.aux) ) 
+) [5 <./rnn_out_const_neu_comp.jpg> <./rnn_out_var_neu_comp.jpg> <./rnn_out_var
+_ang.jpg> <./rnn_out_var_hap.jpg> <./rnn_out_var_sad.jpg>] (Ma.aux) ) 
 Here is how much of TeX's memory you used:
- 6666 strings out of 495223
- 98827 string characters out of 3180311
- 173188 words of memory out of 3000000
- 9789 multiletter control sequences out of 15000+200000
+ 6687 strings out of 495223
+ 99475 string characters out of 3180311
+ 173194 words of memory out of 3000000
+ 9806 multiletter control sequences out of 15000+200000
  30281 words of font info for 76 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 43i,15n,77p,1799b,398s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/Users/max/Library/Application Support/MiKTeX/texmfs/install/f
-onts/enc/dvips/base/8r.enc}</Users/max/Library/Application Support/MiKTeX/texmf
-s/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Users/max/Library/Applicat
-ion Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Us
-ers/max/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/am
-sfonts/cm/cmmi9.pfb></Users/max/Library/Application Support/MiKTeX/texmfs/insta
-ll/fonts/type1/public/amsfonts/cm/cmr6.pfb></Users/max/Library/Application Supp
-ort/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/max/L
-ibrary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm
-/cmr9.pfb></Users/max/Library/Application Support/MiKTeX/texmfs/install/fonts/t
-ype1/public/amsfonts/cm/cmsy9.pfb></Users/max/Library/Application Support/MiKTe
-X/texmfs/install/fonts/type1/public/amsfonts/latxfont/line10.pfb></Users/max/Li
-brary/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrr8a.
-pfb></Users/max/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/u
-rw/times/utmb8a.pfb></Users/max/Library/Application Support/MiKTeX/texmfs/insta
-ll/fonts/type1/urw/times/utmr8a.pfb></Users/max/Library/Application Support/MiK
-TeX/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Ma.pdf (5 pages, 4550913 bytes).
+ 43i,15n,77p,1619b,398s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/Users/ma
+x/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/base/8r.enc
+}</Users/max/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/publ
+ic/amsfonts/cm/cmmi6.pfb></Users/max/Library/Application Support/MiKTeX/texmfs/
+install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/max/Library/Applicatio
+n Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></User
+s/max/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsf
+onts/cm/cmr6.pfb></Users/max/Library/Application Support/MiKTeX/texmfs/install/
+fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/max/Library/Application Support
+/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></Users/max/Libr
+ary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cm
+sy9.pfb></Users/max/Library/Application Support/MiKTeX/texmfs/install/fonts/typ
+e1/public/amsfonts/latxfont/line10.pfb></Users/max/Library/Application Support/
+MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb></Users/max/Library/Ap
+plication Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmb8a.pfb></User
+s/max/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/u
+tmr8a.pfb></Users/max/Library/Application Support/MiKTeX/texmfs/install/fonts/t
+ype1/urw/times/utmri8a.pfb>
+Output written on Ma.pdf (5 pages, 7495712 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
+ 82 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
