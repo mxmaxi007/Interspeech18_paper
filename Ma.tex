@@ -44,8 +44,7 @@ Graduate School at Shenzhen, Tsinghua University, Shenzhen 518055, China\\
 \maketitle
 %
 \begin{abstract}
-In this work, a approach of emotion recognition is proposed for variable-length speech segments, which applied deep neutral network to spectrograms directly. The spectrogram contains more comprehensive para-lingual information than the traditional acoustic features, so it would be better to be the input for the emotion recognition system. We tried to extract such information from spectrograms and accomplish the emotion recognition task by combining Convolutional
-Neural Networks (CNNs) with Recurrent Neural Networks (RNNs). Meanwhile, in order to handle the variable-length speech segments, the neural network structure we constructed can deal with the variable-length input sequence. Compared to split the speech input into the smaller and fixed-length segments, our method can solve the loss of accuracy introduced in the speech segmentation process. We evaluated the emotion recognition model on the IEMOCAP dataset over four emotions. Experimental results demonstrate that the proposed method outperforms the fixed-length neural network on both weighted accuracy (WA) and unweighted accuracy (UA).
+In this work, a approach of emotion recognition is proposed for variable-length speech segments, which applied deep neutral network to spectrograms directly. The spectrogram contains more comprehensive para-lingual information than the traditional acoustic features, so it would be better to be the input for the emotion recognition system. We tried to extract such information from spectrograms and accomplish the emotion recognition task by combining Convolutional Neural Networks (CNNs) with Recurrent Neural Networks (RNNs). Meanwhile, in order to handle the variable-length speech segments, the neural network structure we constructed can deal with the variable-length input sequence. Compared to split the speech input into the smaller and fixed-length segments, our method can solve the loss of accuracy introduced in the speech segmentation process. We evaluated the emotion recognition model on the IEMOCAP dataset over four emotions. Experimental results demonstrate that the proposed method outperforms the fixed-length neural network on both weighted accuracy (WA) and unweighted accuracy (UA).
 \end{abstract}
 
 \noindent\textbf{Index Terms}: Speech Emotion Recognition, Variable-Length Speech Segments, Spectrogram, Deep Neural Network.
@@ -106,6 +105,9 @@ We hypothesized that the convolutional neural networks, capable of learning spat
 \section{Implementation Details}
 \label{sec:implementation_details}
 
+\subsection{Spectrogram Extraction}
+\label{ssec:spectrogram_extraction}
+
 We first extract the spectrogram for the whole sentence, and then the spectrogram, as the input of deep neural network, is classified to the emotion categories. For comparison, we use the similar spectrogram extraction setting and neural network as those used in~\cite{satt2017}.
 
 % \begin{figure}[!htb]
@@ -155,7 +157,6 @@ Dozens of combinations of topologies and parameters were tested. The best deep n
 
 Since the length of sentence is different, we will assign different weights to the loss, in inverse proportion to the length. This ensure that the length of sentence don't affect the bias of model. Besides, the IEMOCAP corpus is significantly unbalanced, the number of some emotional categories is obviously more than other emotional categories. The weight, in inverse proportion to the class size, will also be assigned to the loss.
 
-
 \section{Experiments}
 \label{sec:experiments}
 
@@ -172,9 +173,9 @@ The experimental results can be divided into two parts. In the first part, we sh
 \label{ssec:experimental results}
 First, we conduct emotion recognition experiments by reporting the weighed accuracies (WA) and the unweighted accuracy (UA) of different methods, where WA is the accuracy of all samples in the test set and UA is the average value of the accuracy values of all emotions. Both metrics are standard measurements used in several previous emotion recognition challenge and is adopted in~\cite{satt2017}. Also, owing to the parameters of our network is different from \cite{satt2017}, we also show the result about the fixed-length speech segment as the input for our network. This is to ensure that the improvement of performance don't come from parameters changing.
 
-In Table~\ref{tab:accuracy_en}, we present weighted accuracy (WA) and unweighted accuracy (UA) in the IEMOCAP dataset, where ``Baseline'' represents the result reported in~\cite{satt2017}, ``Fixed-Length'' represents the fixed-length inputs for our neural network, ``Variable-Length'' represents the variable-length inputs for our neural network. As can be seen, the WA of ``Variable-Length'' is 71.45\%, which is a 2.65\% absolute (3.85\% relative) improvement over ``Baseline''; And the UA also reaches 64.22\%, which is a 4.82\% absolute (8.11\% relative) improvement compared to ``Baseline''. Besides, the WA and UA of ``Fixed-Length'' is also lower than ``Variable-Length'', so this proves that the improvement of performance don't come from parameters changing.
+In Table~\ref{tab:accuracy_en}, we present weighted accuracy (WA) and unweighted accuracy (UA) in the IEMOCAP dataset, where ``Baseline'' represents the result reported in~\cite{satt2017}, ``Fixed-Length'' represents zthe fixed-length inputs for our neural network, ``Variable-Length'' represents the variable-length inputs for our neural network. As can be seen, the WA of ``Variable-Length'' is 71.45\%, which is a 2.65\% absolute (3.85\% relative) improvement over ``Baseline''; And the UA also reaches 64.22\%, which is a 4.82\% absolute (8.11\% relative) improvement compared to ``Baseline''. Besides, the WA and UA of ``Fixed-Length'' is also lower than ``Variable-Length'', so this proves that the improvement of performance don't come from parameters changing.
 
-To further analyze the experimental result, we present the confusion matrices of both the fixed-length input and the variable-length input for our network in Table~\ref{tab:cm_const} and Table~\ref{tab:cm_var}. We can find that the recognition accuracies of Neutral for our variable-length network are improved. As we have made the analysis for Figure~\ref{fig:spectrogram}, this is because the confusion between Neutral and other emotions can be alleviated by inputting the whole sentence to the network. Besides, the accuracy of Happy is improved significantly. This is caused by the neutral speech segment in the Happy sentence may be misclassified to other emotions, because these neutral speech segments are very similar by using fixed-length model. Meanwhile, the accuracy of Sad is decreased. It may be that the sample num of Sad is more than other non-neutral emotions, so the increase recall of other non-neutral emotion will lead to the decrease recall of Sad. These results indicate that the variable-length neural network really provides improvement in the recognition accuracy of some emotions.
+To further analyze the experimental result, we present the confusion matrices of both the fixed-length input and the variable-length input for our network in Table~\ref{tab:cm_const} and Table~\ref{tab:cm_var}. We can find that the recognition accuracies of Neutral for our variable-length network are improved. As we have made the analysis for Figure~\ref{fig:spectrogram}, this is because the confusion between Neutral and other emotions can be alleviated by inputting the whole sentence to the network. Besides, the accuracy of Happy is improved significantly. This is caused by the neutral speech segment in the Happy sentence may be misclassified to other emotions, because these neutral speech segments are very similar by using fixed-length model. Meanwhile, the accuracy of Sad is decreased. It may be that the increase recall of other non-neutral emotion will lead to the decrease recall of Sad. These results indicate that the variable-length neural network really provides improvement in the recognition accuracy of some emotions.
 
 \begin{table}[!htb]
 \caption{Comparison of weighted accuracy (WA) and unweighted accuracy (UA) on IEMOCAP dataset. }
@@ -238,7 +239,7 @@ To further analyze the experimental result, we present the confusion matrices of
 \label{tab:cm_var}
 \end{table}
 
-It is informative to examine what the deep network learns by looking at the activations. The Figures below show the activations of different nodes at the recurrecnt neural network, from a speech sample labeled as Neutral.
+It is informative to examine what the deep network learns by looking at the activations. The Figure~\ref{fig:rnn_com} shows the activations of different nodes at the recurrecnt neural network, from a speech sample labeled as Neutral. The left side $-$ shows the activations of the fixed-length model; the right side $-$ shows the activations of the variable-length model. The horizontal axis denotes the time, and the vertical denotes the activations of different nodes at recurrent neural network. The gray scale represents the degree of activation $-$ darker colors designate higher degree. We can find that the right stripes are more clear than the left stripes. Except that, we also find that the specific emtion has higher activation in specific nodes. The Figure~\ref{fig:rnn_emo} shows that the activations of recurrent network in three different emotions. The region in the red box represents the high degree of activation. The active regions are similar for Angry and Happy. It is generally known that these two emotions have similar acoutsic expressions. The active region of Sad is obviously differnet with Happy and Angry. The specific active region cannot be observed in the neutral speech. Probably because neutral speech don't have stable acoutic expressions like other emotions. However, it is harder to find the specific active region for the fixed-length method, owing to fuzzy stripe in the activation map. This proves that variable-length method can relieve the confusion between neutral speech and non-neutral speech, introducing by fixed-length method. 
 
 \begin{figure}[htb]
     \begin{minipage}[b]{.45\linewidth}
@@ -253,7 +254,7 @@ It is informative to examine what the deep network learns by looking at the acti
     %  \vspace{1.5cm}
     \end{minipage}
     %
-    \caption{Left: non-emotional spectrogram; Right: emotional spectrogram}
+    \caption{Left: Fixed-length; Right: Variable-Length}
     \label{fig:rnn_com}
 \end{figure}
 
@@ -276,12 +277,12 @@ It is informative to examine what the deep network learns by looking at the acti
     %  \vspace{1.5cm}
     \end{minipage}
     %
-    \caption{Left: non-emotional spectrogram; Right: emotional spectrogram}
+    \caption{Left: Angry; Middle: Happy, Right: Sad}
     \label{fig:rnn_emo}
 \end{figure}
+
+
     
-
-
 \section{Conclusion}
 \label{sec:conclusion}
 
