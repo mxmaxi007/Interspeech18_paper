@@ -37,51 +37,6 @@ C.~Busso, M.~Bulut, C.~C. Lee, A.~Kazemzadeh, E.~Mower, S.~Kim, J.~N. Chang,
   capture database,'' \emph{Journal of Language Resources and Evaluation},
   vol.~42, no.~4, pp. 335--359, 2008.
 
-\bibitem{ma2017}
-X.~Ma, Z.~Wu, J.~Jia, M.~Xu, H.~Meng, and L.~Cai, ``Speech emotion recognition
-  with emotion-pair based framework considering emotion distribution
-  information in dimensional emotion space,'' in \emph{INTERSPEECH}, 2017, pp.
-  1238--1242.
-
-\bibitem{busso2009}
-C.~Busso, S.~Lee, and S.~Narayanan, ``Analysis of emotionally salient aspects
-  of fundamental frequency for emotion detection,'' \emph{IEEE Transactions on
-  Audio, Speech, and Language Processing}, vol.~17, no.~4, pp. 582--596, 2009.
-
-\bibitem{cowie2001}
-R.~Cowie, E.~Douglascowie, N.~Tsapatsoulis, G.~Votsis, S.~Kollias, W.~Fellenz,
-  and J.~G. Taylor, ``Emotion recognition in human-computer interaction,''
-  \emph{IEEE Signal Processing Magazine}, vol.~18, no.~1, pp. 32--80, 2001.
-
-\bibitem{vayrynen2013}
-E.~Vayrynen, J.~Kortelainen, and T.~Seppanen, ``Classifier-based learning of
-  nonlinear feature manifold for visualization of emotional speech prosody,''
-  \emph{IEEE Transactions on Affective Computing}, vol.~4, no.~1, pp. 47--56,
-  2013.
-
-\bibitem{bellanger1978}
-M.~G. Bellanger, \emph{Digital processing of speech signals}.\hskip 1em plus
-  0.5em minus 0.4em\relax Prentice-Hall, 1978.
-
-\bibitem{atal1974}
-B.~S. Atal, ``Effectiveness of linear prediction characteristics of the speech
-  wave for automatic speaker identification and verification,'' \emph{the
-  Journal of the Acoustical Society of America}, vol.~55, no.~6, pp.
-  1304--1312, 1974.
-
-\bibitem{davis1980}
-S.~B. Davis and P.~Mermelstein, ``Effectiveness of linear prediction
-  characteristics of the speech wave for automatic speaker identification and
-  verification comparison of parametric representations for monosyllabic word
-  recognition in continuously spoken sentences,'' \emph{IEEE Transactions on
-  Acoustics, Speech, and Signal Processing}, vol.~28, no.~4, pp. 357--366,
-  1980.
-
-\bibitem{gobl2003}
-G.~Christer and A.~N. Chasaide, ``The role of voice quality in communicating
-  emotion, mood and attitude,'' \emph{Speech Communication}, vol.~40, no. 1-2,
-  pp. 189--212, 2003.
-
 \bibitem{han2014}
 K.~Han, D.~Yu, and I.~Tashev, ``Speech emotion recognition using deep neural
   network and extreme learning machine,'' in \emph{INTERSPEECH}, 2014.
@@ -151,5 +106,11 @@ G.~Trigeorgis, F.~Ringeval, R.~Brueckner, E.~Marchi, M.~A. Nicolaou,
   B.~Schuller, and S.~Zafeiriou, ``Adieu features? end-to-end speech emotion
   recognition using a deep convolutional recurrent network,'' in \emph{IEEE
   International Conference on Acoustics, Speech and Signal Processing}, 2016.
+
+\bibitem{ma2017}
+X.~Ma, Z.~Wu, J.~Jia, M.~Xu, H.~Meng, and L.~Cai, ``Speech emotion recognition
+  with emotion-pair based framework considering emotion distribution
+  information in dimensional emotion space,'' in \emph{INTERSPEECH}, 2017, pp.
+  1238--1242.
 
 \end{thebibliography}

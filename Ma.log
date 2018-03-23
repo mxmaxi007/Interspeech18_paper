@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600) (preloaded format=pdflatex 2018.3.21)  23 MAR 2018 20:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600) (preloaded format=pdflatex 2018.3.21)  24 MAR 2018 02:51
 entering extended mode
 **./Ma.tex
 (Ma.tex
@@ -621,18 +621,13 @@ LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <9> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 46.
 
-Underfull \hbox (badness 2237) in paragraph at lines 47--48
-\OT1/ptm/m/n/9 for variable-length speech segments, which applied deep
+Underfull \hbox (badness 1303) in paragraph at lines 47--48
+\OT1/ptm/m/n/9 sentences directly as input. Compared to the traditional
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 47--48
-\OT1/ptm/m/n/9 the emotion recognition task by combining Convolutional
- []
-
-
-Underfull \hbox (badness 2368) in paragraph at lines 47--48
-\OT1/ptm/m/n/9 in the speech segmentation process. We evaluated the
+Underfull \hbox (badness 2205) in paragraph at lines 47--48
+\OT1/ptm/m/n/9 methods that split the sentence into smaller fixed-length
  []
 
 
@@ -646,8 +641,8 @@ Underfull \hbox (badness 2469) in paragraph at lines 54--55
  []
 
 
-Underfull \hbox (badness 2035) in paragraph at lines 56--57
-\OT1/ptm/m/n/9 lot of research interests. Most of these researches are
+Underfull \hbox (badness 2213) in paragraph at lines 56--57
+\OT1/ptm/m/n/9 representation of the raw input signal automatically that
  []
 
 
@@ -661,13 +656,13 @@ Underfull \hbox (badness 2495) in paragraph at lines 60--61
  []
 
 
-Underfull \hbox (badness 1237) in paragraph at lines 69--70
-[]\OT1/ptm/m/n/9 In the recent years, deep learning methodologies and
+Underfull \hbox (badness 2884) in paragraph at lines 69--70
+\OT1/ptm/m/n/9 feature extraction, classification/regression, or both  [4[]
  []
 
 
-Underfull \hbox (badness 1019) in paragraph at lines 69--70
-\OT1/ptm/m/n/9 17]. Researchers have shown that replacing hand-crafted
+Underfull \hbox (badness 1728) in paragraph at lines 69--70
+\OT1/ptm/m/n/9 9]. Researchers have shown that replacing hand-crafted
  []
 
 
@@ -691,154 +686,122 @@ ex.map}
 
 
 ]
-<neu.jpg, id=12, 3613.5pt x 2409.0pt>
-File: neu.jpg Graphic file (type jpg)
-<use neu.jpg>
-Package pdftex.def Info: neu.jpg  used on input line 86.
-(pdftex.def)             Requested size: 142.26378pt x 94.83649pt.
-<ang.jpg, id=13, 3613.5pt x 2409.0pt>
-File: ang.jpg Graphic file (type jpg)
-<use ang.jpg>
-Package pdftex.def Info: ang.jpg  used on input line 92.
-(pdftex.def)             Requested size: 142.26378pt x 94.83649pt.
-
-Underfull \hbox (badness 1142) in paragraph at lines 100--101
-\OT1/ptm/m/n/9 segment contains more intense anger, but the left speech
- []
-
-[2 <./neu.jpg> <./ang.jpg>]
-Underfull \hbox (badness 1215) in paragraph at lines 111--112
+Underfull \hbox (badness 1215) in paragraph at lines 112--113
 \OT1/ptm/m/n/9 layer will help learning the temporal behavior across the
  []
 
 
-Underfull \hbox (badness 1983) in paragraph at lines 111--112
+Underfull \hbox (badness 1983) in paragraph at lines 112--113
 \OT1/ptm/m/n/9 sentence. These two types of neural networks will be
  []
 
 
-Underfull \hbox (badness 1199) in paragraph at lines 111--112
+Underfull \hbox (badness 1199) in paragraph at lines 112--113
 \OT1/ptm/m/n/9 used to process the variable-length input sequence. The
  []
 
-
-Underfull \hbox (badness 1184) in paragraph at lines 134--135
-\OT1/ptm/m/n/9 different sentences, and M=400 according to the selected
- []
-
-
-Underfull \hbox (badness 2103) in paragraph at lines 138--139
-[]\OT1/ptm/m/n/9 At last, for improving the computing efficiency, the
- []
-
-
-Underfull \hbox (badness 3039) in paragraph at lines 149--151
+[2]
+Underfull \hbox (badness 3039) in paragraph at lines 148--150
 \OT1/ptm/m/n/9 where $\OML/cmm/m/it/9 Conv\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 S\OT1
 /cmr/m/n/9 )$ \OT1/ptm/m/n/9 is the output of convolution layer for
  []
 
 
-Underfull \hbox (badness 8170) in paragraph at lines 149--151
+Underfull \hbox (badness 8170) in paragraph at lines 148--150
 \OML/cmm/m/it/9 S$\OT1/ptm/m/n/9 , $\OML/cmm/m/it/9 Mask\OT1/cmr/m/n/9 (\OML/cm
 m/m/it/9 S\OT1/cmr/m/n/9 )$ \OT1/ptm/m/n/9 is a masking matrix, and $\OML/cmm/m
 /it/9 S[] \OT1/cmr/m/n/9 =
  []
 
-<network.pdf, id=17, 180.675pt x 227.04825pt>
+<network.pdf, id=15, 180.675pt x 227.04825pt>
 File: network.pdf Graphic file (type pdf)
 <use network.pdf>
-Package pdftex.def Info: network.pdf  used on input line 160.
+Package pdftex.def Info: network.pdf  used on input line 157.
 (pdftex.def)             Requested size: 180.67455pt x 227.04768pt.
 
-Underfull \hbox (badness 1721) in paragraph at lines 166--167
+Underfull \hbox (badness 1721) in paragraph at lines 164--165
 \OT1/ptm/m/n/9 unbalanced, the number of some emotional categories is
  []
 
-[3 <./network.pdf>]
-Underfull \hbox (badness 1199) in paragraph at lines 174--175
+
+Underfull \hbox (badness 1199) in paragraph at lines 172--173
 \OT1/ptm/m/n/9 the experiments. The dataset was designed for studying
  []
 
 
-Underfull \hbox (badness 4995) in paragraph at lines 176--177
-[]\OT1/ptm/m/n/9 Our work focuses on speaker independent emotion
- []
-
-
-Underfull \hbox (badness 1325) in paragraph at lines 184--185
+Underfull \hbox (badness 1325) in paragraph at lines 180--181
 []\OT1/ptm/m/n/9 In Table 1[], we present weighted accuracy (WA) and
  []
 
 
-Underfull \hbox (badness 1127) in paragraph at lines 184--185
+Underfull \hbox (badness 1325) in paragraph at lines 180--181
+\OT1/ptm/m/n/9 represents the fixed-length inputs for our neural network,
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 180--181
 \OT1/ptm/m/n/9 neural network. As can be seen, the WA of ``Variable-
  []
 
 
-Underfull \hbox (badness 2512) in paragraph at lines 184--185
+Underfull \hbox (badness 2512) in paragraph at lines 180--181
 \OT1/ptm/m/n/9 Length'' is 71.45%, which is a 2.65% absolute (3.85%
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 184--185
+Underfull \hbox (badness 1275) in paragraph at lines 180--181
 \OT1/ptm/m/n/9 relative) improvement over ``Baseline''; And the UA also
  []
 
-
-Underfull \hbox (badness 3623) in paragraph at lines 189--189
+[3 <./network.pdf>]
+Underfull \hbox (badness 3623) in paragraph at lines 187--187
 []\OT1/ptm/m/n/9 Table 1: |\OT1/ptm/m/it/9 Comparison of weighted accuracy (WA)
  and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--203
+Underfull \hbox (badness 10000) in paragraph at lines 199--201
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--226
+Underfull \hbox (badness 10000) in paragraph at lines 220--223
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--248
+Underfull \hbox (badness 10000) in paragraph at lines 242--245
 [][]
  []
 
-[4]
-<rnn_out_const_neu_comp.jpg, id=36, 3613.5pt x 2409.0pt>
+<rnn_out_const_neu_comp.jpg, id=30, 3613.5pt x 2409.0pt>
 File: rnn_out_const_neu_comp.jpg Graphic file (type jpg)
 <use rnn_out_const_neu_comp.jpg>
 Package pdftex.def Info: rnn_out_const_neu_comp.jpg  used on input line 255.
 (pdftex.def)             Requested size: 119.50148pt x 79.6553pt.
-<rnn_out_var_neu_comp.jpg, id=37, 3613.5pt x 2409.0pt>
+<rnn_out_var_neu_comp.jpg, id=31, 3613.5pt x 2409.0pt>
 File: rnn_out_var_neu_comp.jpg Graphic file (type jpg)
 <use rnn_out_var_neu_comp.jpg>
 Package pdftex.def Info: rnn_out_var_neu_comp.jpg  used on input line 261.
 (pdftex.def)             Requested size: 119.50148pt x 79.6553pt.
-<rnn_out_var_ang.jpg, id=38, 3613.5pt x 2409.0pt>
+<rnn_out_var_ang.jpg, id=32, 3613.5pt x 2409.0pt>
 File: rnn_out_var_ang.jpg Graphic file (type jpg)
 <use rnn_out_var_ang.jpg>
-Package pdftex.def Info: rnn_out_var_ang.jpg  used on input line 272.
-(pdftex.def)             Requested size: 71.13188pt x 47.41824pt.
-<rnn_out_var_hap.jpg, id=39, 3613.5pt x 2409.0pt>
+Package pdftex.def Info: rnn_out_var_ang.jpg  used on input line 274.
+(pdftex.def)             Requested size: 76.82234pt x 51.20435pt.
+<rnn_out_var_hap.jpg, id=33, 3613.5pt x 2409.0pt>
 File: rnn_out_var_hap.jpg Graphic file (type jpg)
 <use rnn_out_var_hap.jpg>
-Package pdftex.def Info: rnn_out_var_hap.jpg  used on input line 278.
-(pdftex.def)             Requested size: 71.13188pt x 47.41824pt.
-<rnn_out_var_sad.jpg, id=40, 3613.5pt x 2409.0pt>
+Package pdftex.def Info: rnn_out_var_hap.jpg  used on input line 280.
+(pdftex.def)             Requested size: 76.82234pt x 51.20435pt.
+<rnn_out_var_sad.jpg, id=34, 3613.5pt x 2409.0pt>
 File: rnn_out_var_sad.jpg Graphic file (type jpg)
 <use rnn_out_var_sad.jpg>
-Package pdftex.def Info: rnn_out_var_sad.jpg  used on input line 284.
-(pdftex.def)             Requested size: 71.13188pt x 47.41824pt.
+Package pdftex.def Info: rnn_out_var_sad.jpg  used on input line 286.
+(pdftex.def)             Requested size: 76.82234pt x 51.20435pt.
 
-Underfull \hbox (badness 1748) in paragraph at lines 296--297
-\OT1/ptm/m/n/9 that operates on the spectrogram, to perform an end-to-
- []
-
-
-Underfull \hbox (badness 1603) in paragraph at lines 296--297
-\OT1/ptm/m/n/9 comparing with the previous work of fixed-length neural
+Underfull \hbox (badness 4181) in paragraph at lines 300--301
+\OT1/ptm/m/n/9 beyond the state of the art accuracy on the common
  []
 
 (Ma.bbl
@@ -847,90 +810,67 @@ Underfull \hbox (badness 2662) in paragraph at lines 25--28
  []
 
 
+Underfull \vbox (badness 1048) has occurred while \output is active []
+
+ [4 <./rnn_out_const_neu_comp.jpg> <./rnn_out_var_neu_comp.jpg> <./rnn_out_var_
+ang.jpg> <./rnn_out_var_hap.jpg> <./rnn_out_var_sad.jpg>]
 Underfull \hbox (badness 2368) in paragraph at lines 30--33
 []\OT1/ptm/m/n/8 A. Satt, S. Rozenberg, and R. Hoory, ``Efficient emotion
  []
 
 
-Underfull \hbox (badness 2735) in paragraph at lines 41--45
-[]\OT1/ptm/m/n/8 X. Ma, Z. Wu, J. Jia, M. Xu, H. Meng, and L. Cai,
- []
-
-
-Underfull \hbox (badness 1852) in paragraph at lines 41--45
-\OT1/ptm/m/n/8 considering emotion distribution information in dimensional
- []
-
-
-Underfull \hbox (badness 1694) in paragraph at lines 57--61
-[]\OT1/ptm/m/n/8 E. Vayrynen, J. Kortelainen, and T. Seppanen, ``Classifier-
- []
-
-
-Underfull \hbox (badness 2903) in paragraph at lines 73--79
-[]\OT1/ptm/m/n/8 S. B. Davis and P. Mermelstein, ``Effectiveness of linear
- []
-
-
-Underfull \hbox (badness 1668) in paragraph at lines 73--79
-\OT1/ptm/m/n/8 prediction characteristics of the speech wave for automatic
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--79
-\OT1/ptm/m/n/8 representations for monosyllabic word recognition in
- []
-
-
-Underfull \hbox (badness 6741) in paragraph at lines 81--84
-\OT1/ptm/m/n/8 in communicating emotion, mood and attitude,'' \OT1/ptm/m/it/8 S
-peech
- []
-
-
-Underfull \hbox (badness 1968) in paragraph at lines 118--120
+Underfull \hbox (badness 1968) in paragraph at lines 73--75
 []\OT1/ptm/m/n/8 M. Bhargava and R. Rose, ``Architectures for deep neural
  []
 
 
-Underfull \hbox (badness 1924) in paragraph at lines 133--136
+Underfull \hbox (badness 1924) in paragraph at lines 88--91
 \OT1/ptm/m/n/8 ``Deep speech: Scaling up end-to-end speech recognition,''
  []
 
 
-Underfull \hbox (badness 2426) in paragraph at lines 138--142
+Underfull \hbox (badness 2426) in paragraph at lines 93--97
 \OT1/ptm/m/n/8 B. Catanzaro, J. Chen, M. Chrzanowski, A. Coates, and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--148
+Underfull \hbox (badness 10000) in paragraph at lines 99--103
 \OT1/ptm/m/n/8 Dominguez, ``Deep neural networks for small footprint
  []
 
 
-Underfull \hbox (badness 3407) in paragraph at lines 144--148
+Underfull \hbox (badness 3407) in paragraph at lines 99--103
 \OT1/ptm/m/n/8 text-dependent speaker verification,'' in \OT1/ptm/m/it/8 IEEE I
 nternational
  []
 
-[5 <./rnn_out_const_neu_comp.jpg> <./rnn_out_var_neu_comp.jpg> <./rnn_out_var_a
-ng.jpg> <./rnn_out_var_hap.jpg> <./rnn_out_var_sad.jpg>]
-Underfull \hbox (badness 4621) in paragraph at lines 150--154
+
+Underfull \hbox (badness 4621) in paragraph at lines 105--109
 \OT1/ptm/m/n/8 recurrent network,'' in \OT1/ptm/m/it/8 IEEE International Confe
 rence on
  []
 
-) [6
+
+Underfull \hbox (badness 2735) in paragraph at lines 111--115
+[]\OT1/ptm/m/n/8 X. Ma, Z. Wu, J. Jia, M. Xu, H. Meng, and L. Cai,
+ []
+
+
+Underfull \hbox (badness 1852) in paragraph at lines 111--115
+\OT1/ptm/m/n/8 considering emotion distribution information in dimensional
+ []
+
+) [5
 
 ] (Ma.aux) ) 
 Here is how much of TeX's memory you used:
- 6690 strings out of 495223
- 99547 string characters out of 3180311
- 173224 words of memory out of 3000000
- 9809 multiletter control sequences out of 15000+200000
+ 6673 strings out of 495223
+ 99366 string characters out of 3180311
+ 176198 words of memory out of 3000000
+ 9794 multiletter control sequences out of 15000+200000
  30281 words of font info for 76 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 43i,15n,77p,1641b,396s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,15n,77p,1786b,394s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/Users/max/Library/Application Support/MiKTeX/texmfs/install/fonts
 /enc/dvips/base/8r.enc}</Users/max/Library/Application Support/MiKTeX/texmfs/in
 stall/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Users/max/Library/Application 
@@ -948,9 +888,9 @@ y/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb>
 imes/utmb8a.pfb></Users/max/Library/Application Support/MiKTeX/texmfs/install/f
 onts/type1/urw/times/utmr8a.pfb></Users/max/Library/Application Support/MiKTeX/
 texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Ma.pdf (6 pages, 7681215 bytes).
+Output written on Ma.pdf (5 pages, 3323901 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
+ 80 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
