@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600) (preloaded format=pdflatex 2018.3.21)  24 MAR 2018 02:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600) (preloaded format=pdflatex 2018.3.21)  24 MAR 2018 10:43
 entering extended mode
 **./Ma.tex
 (Ma.tex
@@ -700,7 +700,10 @@ Underfull \hbox (badness 1199) in paragraph at lines 112--113
 \OT1/ptm/m/n/9 used to process the variable-length input sequence. The
  []
 
-[2]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
 Underfull \hbox (badness 3039) in paragraph at lines 148--150
 \OT1/ptm/m/n/9 where $\OML/cmm/m/it/9 Conv\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 S\OT1
 /cmr/m/n/9 )$ \OT1/ptm/m/n/9 is the output of convolution layer for
@@ -728,7 +731,7 @@ Underfull \hbox (badness 1199) in paragraph at lines 172--173
 \OT1/ptm/m/n/9 the experiments. The dataset was designed for studying
  []
 
-
+[3 <./network.pdf>]
 Underfull \hbox (badness 1325) in paragraph at lines 180--181
 []\OT1/ptm/m/n/9 In Table 1[], we present weighted accuracy (WA) and
  []
@@ -753,7 +756,7 @@ Underfull \hbox (badness 1275) in paragraph at lines 180--181
 \OT1/ptm/m/n/9 relative) improvement over ``Baseline''; And the UA also
  []
 
-[3 <./network.pdf>]
+
 Underfull \hbox (badness 3623) in paragraph at lines 187--187
 []\OT1/ptm/m/n/9 Table 1: |\OT1/ptm/m/it/9 Comparison of weighted accuracy (WA)
  and
@@ -804,16 +807,13 @@ Underfull \hbox (badness 4181) in paragraph at lines 300--301
 \OT1/ptm/m/n/9 beyond the state of the art accuracy on the common
  []
 
-(Ma.bbl
+[4 <./rnn_out_const_neu_comp.jpg> <./rnn_out_var_neu_comp.jpg> <./rnn_out_var_a
+ng.jpg> <./rnn_out_var_hap.jpg> <./rnn_out_var_sad.jpg>] (Ma.bbl
 Underfull \hbox (badness 2662) in paragraph at lines 25--28
 []\OT1/ptm/m/n/8 M. E. Ayadi, M. S. Kamel, and F. Karray, ``Survey on
  []
 
 
-Underfull \vbox (badness 1048) has occurred while \output is active []
-
- [4 <./rnn_out_const_neu_comp.jpg> <./rnn_out_var_neu_comp.jpg> <./rnn_out_var_
-ang.jpg> <./rnn_out_var_hap.jpg> <./rnn_out_var_sad.jpg>]
 Underfull \hbox (badness 2368) in paragraph at lines 30--33
 []\OT1/ptm/m/n/8 A. Satt, S. Rozenberg, and R. Hoory, ``Efficient emotion
  []
@@ -860,9 +860,7 @@ Underfull \hbox (badness 1852) in paragraph at lines 111--115
 \OT1/ptm/m/n/8 considering emotion distribution information in dimensional
  []
 
-) [5
-
-] (Ma.aux) ) 
+) [5] (Ma.aux) ) 
 Here is how much of TeX's memory you used:
  6673 strings out of 495223
  99366 string characters out of 3180311
@@ -871,24 +869,24 @@ Here is how much of TeX's memory you used:
  30281 words of font info for 76 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  43i,15n,77p,1786b,394s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/Users/max/Library/Application Support/MiKTeX/texmfs/install/fonts
-/enc/dvips/base/8r.enc}</Users/max/Library/Application Support/MiKTeX/texmfs/in
-stall/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Users/max/Library/Application 
-Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/
-max/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfon
-ts/cm/cmmi9.pfb></Users/max/Library/Application Support/MiKTeX/texmfs/install/f
-onts/type1/public/amsfonts/cm/cmr6.pfb></Users/max/Library/Application Support/
-MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/max/Libra
-ry/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr
-9.pfb></Users/max/Library/Application Support/MiKTeX/texmfs/install/fonts/type1
-/public/amsfonts/cm/cmsy9.pfb></Users/max/Library/Application Support/MiKTeX/te
-xmfs/install/fonts/type1/public/amsfonts/latxfont/line10.pfb></Users/max/Librar
-y/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb>
-</Users/max/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/t
-imes/utmb8a.pfb></Users/max/Library/Application Support/MiKTeX/texmfs/install/f
-onts/type1/urw/times/utmr8a.pfb></Users/max/Library/Application Support/MiKTeX/
-texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Ma.pdf (5 pages, 3323901 bytes).
+{/Users/max/Library/Application Support/MiKTeX/texmfs/install/f
+onts/enc/dvips/base/8r.enc}</Users/max/Library/Application Support/MiKTeX/texmf
+s/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Users/max/Library/Applicat
+ion Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Us
+ers/max/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/am
+sfonts/cm/cmmi9.pfb></Users/max/Library/Application Support/MiKTeX/texmfs/insta
+ll/fonts/type1/public/amsfonts/cm/cmr6.pfb></Users/max/Library/Application Supp
+ort/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/max/L
+ibrary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm
+/cmr9.pfb></Users/max/Library/Application Support/MiKTeX/texmfs/install/fonts/t
+ype1/public/amsfonts/cm/cmsy9.pfb></Users/max/Library/Application Support/MiKTe
+X/texmfs/install/fonts/type1/public/amsfonts/latxfont/line10.pfb></Users/max/Li
+brary/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrr8a.
+pfb></Users/max/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/u
+rw/times/utmb8a.pfb></Users/max/Library/Application Support/MiKTeX/texmfs/insta
+ll/fonts/type1/urw/times/utmr8a.pfb></Users/max/Library/Application Support/MiK
+TeX/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Ma.pdf (5 pages, 3324084 bytes).
 PDF statistics:
  80 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
