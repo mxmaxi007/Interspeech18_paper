@@ -76,7 +76,7 @@ In the field of speech emotion recognition, several studies have been carried ou
 \subsection{Problems of Fixed-Length Method}
 \label{ssec:problem_fixed_len}
 
-In~\cite{satt2017}, they first split each sentence longer than 3 seconds to shorter sub-sentences of equal length. The part of no longer than 3 second is padded to 3 second with zero after extracting spectrograms. Each sub-sentence is assigned the emotion label of the corresponding whole sentence. These shorter sub-sentences are used throughout the proposed system, for both training and testing stages. During testing phrase, the prediction of the emotion category for the whole sentence is achieved by averaging the posterior probabilities of the respective sub-sentences. Although this method can reduce the difficulty for constructing neural network (ensure that the lengths of inputs are equal), some errors will be introduced. Actually, it is not a good treatment to assign each sub-sentence the emotion label of the corresponding whole sentence. The observation indicates that only a part of voice contains obvious non-neutral emotional information in the non-neutral emotional sentence. In other word, some shorter sub-sentences, which belong to a sentence with non-neutral emotion, may not contain any non-neutral emotional information. The use of such sub-sentences for training neutral network may lead to the confusion of the network in identifying the neutral emotion and the non-neutral emotions. However, when we listen to the whole sentence, the neural speech segments can enhance the feeling of emotional speech segments. Hence, it is desirable to design an architecture that can lean such contrastive characteristics and recognize emotions using the entire speech sentence.
+In~\cite{satt2017}, they first split each sentence longer than 3 seconds to shorter sub-sentences of equal length. The part of no longer than 3 second is padded to 3 second with zero after extracting spectrograms. Each sub-sentence is assigned the emotion label of the corresponding whole sentence. These shorter sub-sentences are used throughout the proposed system, for both training and testing stages. During testing phrase, the prediction of the emotion category for the whole sentence is achieved by averaging the posterior probabilities of the respective sub-sentences. Although this method can reduce the difficulty for constructing neural network (ensure that the lengths of inputs are equal), some errors will be introduced. Actually, it is not a good treatment to assign each sub-sentence the emotion label of the corresponding whole sentence. The observation indicates that only a part of voice contains obvious non-neutral emotional information in the non-neutral emotional sentence. In other word, some shorter sub-sentences, which belong to a sentence with non-neutral emotion, may not contain any non-neutral emotional information. The use of such sub-sentences for training neutral network may lead to the confusion of the network in identifying the neutral emotion and the non-neutral emotions. However, when we listen to the whole sentence, the neural speech segments can enhance the feeling of emotional speech segments. Hence, it is desirable to design an architecture that can lean such contractive characteristics and recognize emotions using the entire speech sentence.
 
 % To further examine the difference between two speech segments from the same sentence, let's look at spectrograms. The Figure~\ref{fig:spectrogram} below show the spectrograms of two different speech segments (length is 3s), which from the same sentence labeled as Angry.
 
@@ -103,7 +103,7 @@ In~\cite{satt2017}, they first split each sentence longer than 3 seconds to shor
 \subsection{Variable-Length Deep Neutral Network}
 \label{ssec:var_len_dnn}
 
-The above problems indicate that using the whole sentence as the input is more reasonable than spliting into several segments. But the lengths of sentences are different in general, so our study aims to design a neural network to handle the variable-length input sequence. 
+The above problems indicate that using the whole sentence as the input is more reasonable than splitting into several segments. But the lengths of sentences are different in general, so our study aims to design a neural network to handle the variable-length input sequence. 
 
 As we all known, convolutional neural networks (CNNs) can be thought of as a kind of neural network that uses many identical copies of the same neuron. This allows the network to have lots of neurons and express computationally large models while keeping the number of actual parameters $-$ the values describing how neurons behave $-$ that need to be learned fairly small. The common used means, especially in the computer vision, is to process the inputs of the same size. This is convenient to connect other neural network, such as full connected layer. But in fact, the convolutional neural network just need to train convolutional kernels, so it can also be trained, even if the input size is different.
 
@@ -139,7 +139,7 @@ To improve the computing efficiency, the speech samples are ordered by the sente
 \subsection{Deep Neural Network}
 \label{ssec:deep_neural_network}
 
-In our work, the input sequence are padded into the same length with zero in the same batch during training stage, and will have no padding during predicting stage, so our neural network need to possess the capacity to avoid the interference of padding value on the output.  Let $S=[x_1, x_2, ..., x_V, ..., x_T]$ be a input sequence, where $S1=[x_1, x_2, ..., x_V]$ is the valid part and $S2=[x_{V+1}, x_{V+2}, ..., x_T]$ is the padding part.
+In our work, the input sequence are padded into the same length with zero in the same batch during training stage, but the length between different batches are different. And no padding is used during predicting stage. So our neural network need to possess the capacity to avoid the interference of padding value on the output.  Let $S=[x_1, x_2, ..., x_V, ..., x_T]$ be a input sequence, where $S1=[x_1, x_2, ..., x_V]$ is the valid part and $S2=[x_{V+1}, x_{V+2}, ..., x_T]$ is the padding part.
 
 First, for the convolution neutral network, we can use masking to reserve the outputs from $S1$ and ignore the outputs from $S2$, which can be represented as follows:
 \begin{equation}
@@ -171,7 +171,7 @@ Since the length of sentence is different, we will assign different weights to t
 
 In this work, the IEMOCAP dataset~\cite{busso2008} is used for conducting the experiments. The dataset was designed for studying multimodal expressive dyadic interactions. It was collected using motion capture and audio/video recording (approximately a total of 12h) over 5 dyadic sessions with 10 subjects. Each session consists of a different dyad where one male and one female actor perform scripted plays and engage in spontaneous improvised dialogs elicited through affective scenario prompts. At least three evaluators annotated each utterance in the dataset with the categorical emotion labels chosen from the set: happy, sad, neutral, angry, surprised, exited, frustration, disgust, fear and other. We consider only the utterances with majority agreement (at least two out of three evaluators gave the same emotion label) over the emotion classes of: Angry, Happy, Sad and Neutral. The dataset contains scripted and improvised dialogs. As the script text exhibits strong correlation with the labeled emotions, it may give rise to lingual content learning, at least partially, which is an undesired side effect. Therefore we used the improvised data only. Such configuration is the same as~\cite{satt2017}, which makes the experimental results comparable between our work and~\cite{satt2017}. The 5-folds cross-validation method is used to conduct the experiments. In each fold, the data from four sessions is used for training the deep neural network, and the data from the remaining session is split $-$ one speaker for validation and the other for the accuracy testing.
 
-The experimental results can be divided into two parts. In the first part, we compare the performance of the variable-length neural network and the fixed-length neural network. In the second part, we show the activations of thr recurrent neural network from the variable-length neural network and the fixed-length neural network, whose difference can be used to verify the our assumption about the fixed-length method can lead to the confuison of modle training. 
+The experimental results can be divided into two parts. In the first part, we compare the performance of the variable-length neural network and the fixed-length neural network. In the second part, we show the activations of the recurrent neural network from the variable-length neural network and the fixed-length neural network, whose difference can be used to verify our assumption that the fixed-length method may lead to the confusion of model training. 
 
 \subsection{Experimental Results}
 \label{ssec:experimental_results}
@@ -182,8 +182,8 @@ In Table~\ref{tab:accuracy_en}, we present weighted accuracy (WA) and unweighted
 To further analyze the experimental result, we present the confusion matrices of both the fixed-length input and the variable-length input for our network in Table~\ref{tab:cm_const} and Table~\ref{tab:cm_var}. We can find that the recognition accuracies of Neutral for our variable-length network are improved. As we have made the analysis for Section~\ref{ssec:problem_fixed_len}, this is because the confusion between Neutral and other emotions can be alleviated by inputting the whole sentence to the network. Besides, the accuracy of Happy is improved significantly. This is caused by the neutral speech segment in the Happy sentence may be misclassified to other emotions, because these neutral speech segments are very similar by using fixed-length model. Meanwhile, the accuracy of Sad is decreased. It may be that the increasing recall of other non-neutral emotion lead to the decreasing recall of Sad. These results indicate that the variable-length neural network really provides improvement in the recognition accuracy of some emotions.
 
 \begin{table}[htb]
-    % \setlength{\abovecaptionskip}{0cm}
-    % \setlength{\belowcaptionskip}{-0.3cm}
+    \setlength{\abovecaptionskip}{0cm}
+    \setlength{\belowcaptionskip}{-0.3cm}
     \caption{Comparison of weighted accuracy (WA) and unweighted accuracy (UA) on IEMOCAP dataset}
     \scalebox{0.95}{
     \begin{tabular}{p{3cm}<{\centering} | p{2cm}<{\centering} | p{2cm}<{\centering}}
@@ -201,8 +201,8 @@ To further analyze the experimental result, we present the confusion matrices of
 \end{table}
 
 \begin{table}[htb]
-    % \setlength{\abovecaptionskip}{0cm}
-    % \setlength{\belowcaptionskip}{-0.3cm}
+    \setlength{\abovecaptionskip}{0cm}
+    \setlength{\belowcaptionskip}{-0.3cm}
     \caption{Confusion matrix by using the fixed-length neural network}
     \scalebox{0.9}{
     \begin{tabular}{c|c|c|c|c}
@@ -223,8 +223,8 @@ To further analyze the experimental result, we present the confusion matrices of
 \end{table}
 
 \begin{table}[htb]
-    % \setlength{\abovecaptionskip}{0cm}
-    % \setlength{\belowcaptionskip}{-0.3cm}
+    \setlength{\abovecaptionskip}{0cm}
+    \setlength{\belowcaptionskip}{-0.3cm}
     \caption{Confusion matrix by using the variable-length neural network}
     \scalebox{0.9}{
     \begin{tabular}{c|c|c|c|c}
@@ -247,7 +247,7 @@ To further analyze the experimental result, we present the confusion matrices of
 \subsection{Analysis of Network Activations}
 \label{ssec:analysis_activation}
 
-It is informative to examine what the deep network learns by looking at the activations. Figure~\ref{fig:rnn_comp} shows the activations of different nodes of recurrecnt neural network, from a speech sentence labeled as Neutral. The left one shows the activations of the fixed-length model; the right one shows the activations of the variable-length model. The horizontal axis denotes the time, and the vertical denotes the activations of different nodes at recurrent neural network. The gray scale represents the degree of activation $-$ darker colors designate higher actication. We can find that the right stripes are more clear than the left stripes in the activation map. Besides, we also find that the specific emotion has higher activation in specific nodes. Figure~\ref{fig:rnn_emo} shows that the activation maps of recurrent network in three different emotions. The nodes in the red box represents the high degree of activation. As can be observed, the active nodes are similar for Angry and Happy. It is generally known that these two emotions have similar acoutsic expressions~\cite{ma2017}. But the active nodes of Sad are obviously different from Happy and Angry. However, such specific active nodes cannot be observed in the neutral speech (right of Figure~\ref{fig:rnn_comp}). All these results indicate that there are clear differences between different emotions (including neutral) for the active nodes of the variable-length neural network.  On the other hand, for the fixed-length method, it is hard to observe such trend due to the fuzzy stripes in the activation map (left of Figure~\ref{fig:rnn_comp}). This proves that variable-length method can relieve the confusion between neutral and non-neutral emotions in the fixed-length method.
+It is informative to examine what the deep network learns by looking at the activations. Figure~\ref{fig:rnn_comp} shows the activations of different nodes of recurrent neural network, from a speech sentence labeled as Neutral. The left one shows the activations of the fixed-length model; the right one shows the activations of the variable-length model. The horizontal axis denotes the time, and the vertical denotes the activations of different nodes at recurrent neural network. The gray scale represents the degree of activation $-$ darker colors designate higher activation. We can find that the right stripes are more clear than the left stripes in the activation map. Besides, we also find that the specific emotion has higher activation in specific nodes. Figure~\ref{fig:rnn_emo} shows that the activation maps of recurrent network in three different emotions. The nodes in the red box represents the high degree of activation. As can be observed, the active nodes are similar for Angry and Happy. It is generally known that these two emotions have similar acoustic expressions~\cite{ma2017}. But the active nodes of Sad are obviously different from Happy and Angry. However, owing to the unstable acoustic expression, such specific active nodes cannot be observed in the neutral speech (right of Figure~\ref{fig:rnn_comp}). All these results indicate that there are clear differences between different emotions (including neutral) for the active nodes of the variable-length neural network.  On the other hand, for the fixed-length method, it is hard to observe such trend due to the fuzzy stripes in the activation map (left of Figure~\ref{fig:rnn_comp}). This proves that variable-length method can relieve the confusion between neutral and non-neutral emotions in the fixed-length method.
 
 \begin{figure}[htb]
     \begin{minipage}[b]{0.42\linewidth}
@@ -289,7 +289,7 @@ It is informative to examine what the deep network learns by looking at the acti
     %
     % \setlength{\abovecaptionskip}{0cm}
     % \setlength{\belowcaptionskip}{0cm}
-    \caption{Spectific active nodes for different emotions (Left: Angry; Middle: Happy; Right: Sad)}
+    \caption{Specific active nodes for different emotions (Left: Angry; Middle: Happy; Right: Sad)}
     \label{fig:rnn_emo}
 \end{figure}
 
