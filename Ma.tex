@@ -59,7 +59,7 @@ A spectrogram is a time-frequency decomposition of a signal that indicates its f
 
 The idea of this work is similar to Satt's previous work~\cite{satt2017}. However, our neural network possesses the advantage of being able to handle the variable-length speech segments. Compared to splitting the speech input into the smaller and fixed-length segments, our method can solve the loss of accuracy introduced by the speech segmentation process. In the IEMOCAP dataset~\cite{busso2008}, we can achieve a weighted accuracy (WA) of 71.45\% using 5-fold (leave-one-session out) cross validation, which is a 2.65\% absolute (3.85\% relative) improvement over the fixed-length approach. The unweighted accuracy (UA) on the same dataset is 64.22\%, which also outperforms the fixed-length approach with 4.82\% absolute (8.11\% relative) improvement.
 
-The rest of the paper is organized as follows. Section~\ref{sec:related_work} summarizes the previous related work. Comparison between variable-length method and fixed-length method is shown in Section~~\ref{sec:var_len_vs_fixed_len}. The spectrogram extraction and the variable-length neural network structure is then detailed in Section~\ref{sec:implementation_details}. Experiments results are presented in Section~\ref{sec:experiments}. Section~\ref{sec:conclusion} concludes the paper.
+% The rest of the paper is organized as follows. Section~\ref{sec:related_work} summarizes the previous related work. Comparison between variable-length method and fixed-length method is shown in Section~~\ref{sec:var_len_vs_fixed_len}. The spectrogram extraction and the variable-length neural network structure is then detailed in Section~\ref{sec:implementation_details}. Experiments results are presented in Section~\ref{sec:experiments}. Section~\ref{sec:conclusion} concludes the paper.
 
 \section{Related Work}
 \label{sec:related_work}
@@ -299,15 +299,13 @@ It is informative to examine what the deep network learns by looking at the acti
 
 In this paper, we propose a variable-length neutral network that operates on the spectrogram, to perform emotion classification task from variable-length speech segments. Through inputting the whole sentence into the model, our method can effectively alleviate the confusion between Neutral and other emotions introduced in the traditional fixed-length method in splitting the sentence into smaller fixed-length segments. The weighed accuracies (WA) and the unweighted accuracy (UA) achieves beyond the state of the art accuracy on the common benchmarking dataset IEMOCAP, comparing with the previous work of fixed-length neural network. In the future, we will continue to explore how to use other deep neutral network structure to handle variable-length speech emotion recognition.
 
-%\section{Acknowledgement}
-%\label{sec:acknowledgement}
-%
-%This work is supported by National High Technology Research and Development Program of China (2015AA016305), National Natural Science Foundation of China (NSFC) (61375027, 61433018, 61370023 and 61171116), joint fund of NSFC-RGC (Research Grant Council of Hong Kong) (61531166002, N CUHK404/15) and Major Program for National Social Science Foundation of China (13\&ZD189).
+\section{Acknowledgement}
+\label{sec:acknowledgement}
+
+This work is supported by National Natural Science Foundation of China (NSFC) (61433018, 61375027), joint research fund of NSFC-RGC (Research Grant Council of Hong Kong) (61531166002, N\_CUHK404/15) and National Social Science Foundation of China (13\&ZD189).
 
 
 \bibliographystyle{IEEEtran}
-
 \bibliography{refs}
-
 
 \end{document}

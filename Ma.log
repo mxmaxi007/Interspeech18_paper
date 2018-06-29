@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600) (preloaded format=pdflatex 2018.3.21)  4 JUN 2018 16:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600) (preloaded format=pdflatex 2018.3.21)  29 JUN 2018 10:09
 entering extended mode
 **./Ma.tex
 (Ma.tex
@@ -695,10 +695,7 @@ Underfull \hbox (badness 1199) in paragraph at lines 112--113
 \OT1/ptm/m/n/9 used to process the variable-length input sequence. The
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
+[2]
 Underfull \hbox (badness 3039) in paragraph at lines 148--150
 \OT1/ptm/m/n/9 where $\OML/cmm/m/it/9 Conv\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 S\OT1
 /cmr/m/n/9 )$ \OT1/ptm/m/n/9 is the output of convolution layer for
@@ -711,7 +708,7 @@ m/m/it/9 S\OT1/cmr/m/n/9 )$ \OT1/ptm/m/n/9 is a masking matrix, and $\OML/cmm/m
 /it/9 S[] \OT1/cmr/m/n/9 =
  []
 
-<network.pdf, id=15, 180.675pt x 227.04825pt>
+<network.pdf, id=19, 180.675pt x 227.04825pt>
 File: network.pdf Graphic file (type pdf)
 <use network.pdf>
 Package pdftex.def Info: network.pdf  used on input line 157.
@@ -726,7 +723,7 @@ Underfull \hbox (badness 1199) in paragraph at lines 172--173
 \OT1/ptm/m/n/9 the experiments. The dataset was designed for studying
  []
 
-[3 <./network.pdf>]
+
 Underfull \hbox (badness 1325) in paragraph at lines 180--181
 []\OT1/ptm/m/n/9 In Table 1[], we present weighted accuracy (WA) and
  []
@@ -751,7 +748,7 @@ Underfull \hbox (badness 1275) in paragraph at lines 180--181
 \OT1/ptm/m/n/9 relative) improvement over ``Baseline''; And the UA also
  []
 
-
+[3 <./network.pdf>]
 Underfull \hbox (badness 3623) in paragraph at lines 187--187
 []\OT1/ptm/m/n/9 Table 1: |\OT1/ptm/m/it/9 Comparison of weighted accuracy (WA)
  and
@@ -800,6 +797,11 @@ Package pdftex.def Info: rnn_out_var_sad.jpg  used on input line 286.
 
 Underfull \hbox (badness 4181) in paragraph at lines 300--301
 \OT1/ptm/m/n/9 beyond the state of the art accuracy on the common
+ []
+
+
+Underfull \hbox (badness 1895) in paragraph at lines 305--306
+\OT1/ptm/m/n/9 of NSFC-RGC (Research Grant Council of Hong Kong)
  []
 
 (Ma.bbl
@@ -859,10 +861,10 @@ Underfull \hbox (badness 1852) in paragraph at lines 111--115
 
 ] (Ma.aux) ) 
 Here is how much of TeX's memory you used:
- 6673 strings out of 495223
- 99366 string characters out of 3180311
- 176198 words of memory out of 3000000
- 9794 multiletter control sequences out of 15000+200000
+ 6675 strings out of 495223
+ 99405 string characters out of 3180311
+ 176206 words of memory out of 3000000
+ 9796 multiletter control sequences out of 15000+200000
  30281 words of font info for 76 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  43i,15n,77p,1825b,398s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -883,7 +885,7 @@ y/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb>
 imes/utmb8a.pfb></Users/max/Library/Application Support/MiKTeX/texmfs/install/f
 onts/type1/urw/times/utmr8a.pfb></Users/max/Library/Application Support/MiKTeX/
 texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Ma.pdf (5 pages, 3324131 bytes).
+Output written on Ma.pdf (5 pages, 3324600 bytes).
 PDF statistics:
  80 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
