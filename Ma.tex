@@ -250,15 +250,15 @@ To further analyze the experimental result, we present the confusion matrices of
 It is informative to examine what the deep network learns by looking at the activations. Figure~\ref{fig:rnn_comp} shows the activations of different nodes of recurrent neural network, from a speech sentence labeled as Neutral. The left one shows the activations of the fixed-length model; the right one shows the activations of the variable-length model. The horizontal axis denotes the time, and the vertical denotes the activations of different nodes at recurrent neural network. The gray scale represents the degree of activation $-$ darker colors designate higher activation. We can find that the right stripes are clearer than the left stripes in the activation map. Besides, we also find that the specific emotion has higher activation in specific nodes. Figure~\ref{fig:rnn_emo} shows that the activation maps of recurrent network in three different emotions. The nodes in the red box represents the high degree of activation. As can be observed, the active nodes are similar for Angry and Happy. It is generally known that these two emotions have similar acoustic expressions~\cite{ma2017}. But the active nodes of Sad are obviously different from Happy and Angry. However, owing to the unstable acoustic expression, such specific active nodes cannot be observed in the neutral speech (right of Figure~\ref{fig:rnn_comp}). All these results indicate that there are clear differences between different emotions (including neutral) for the active nodes of the variable-length neural network.  On the other hand, for the fixed-length method, it is hard to observe such trend due to the fuzzy stripes in the activation map (left of Figure~\ref{fig:rnn_comp}). This proves that variable-length method can relieve the confusion between neutral and non-neutral emotions in the fixed-length method.
 
 \begin{figure}[htb]
-    \begin{minipage}[b]{0.42\linewidth}
+    \begin{minipage}[b]{0.45\linewidth}
       \centering
-      \centerline{\includegraphics[width=4.2cm]{rnn_out_const_neu_comp}}
+      \centerline{\includegraphics[width=3.6cm]{rnn_out_const_neu_comp}}
     %  \vspace{1.5cm}
     \end{minipage}
     \hfill
-    \begin{minipage}[b]{0.42\linewidth}
+    \begin{minipage}[b]{0.45\linewidth}
       \centering
-      \centerline{\includegraphics[width=4.2cm]{rnn_out_var_neu_comp}}
+      \centerline{\includegraphics[width=3.6cm]{rnn_out_var_neu_comp}}
     %  \vspace{1.5cm}
     \end{minipage}
     %
@@ -269,21 +269,21 @@ It is informative to examine what the deep network learns by looking at the acti
 \end{figure}
 
 \begin{figure}[htb]
-    \begin{minipage}[b]{0.27\linewidth}
+    \begin{minipage}[b]{0.3\linewidth}
       \centering
-      \centerline{\includegraphics[width=2.7cm]{rnn_out_var_ang}}
+      \centerline{\includegraphics[width=2.4cm]{rnn_out_var_ang}}
     %  \vspace{1.5cm}
     \end{minipage}
     \hfill
-    \begin{minipage}[b]{0.27\linewidth}
+    \begin{minipage}[b]{0.3\linewidth}
       \centering
-      \centerline{\includegraphics[width=2.7cm]{rnn_out_var_hap}}
+      \centerline{\includegraphics[width=2.4cm]{rnn_out_var_hap}}
     %  \vspace{1.5cm}
     \end{minipage}
     \hfill
-    \begin{minipage}[b]{0.27\linewidth}
+    \begin{minipage}[b]{0.3\linewidth}
       \centering
-      \centerline{\includegraphics[width=2.7cm]{rnn_out_var_sad}}
+      \centerline{\includegraphics[width=2.4cm]{rnn_out_var_sad}}
     %  \vspace{1.5cm}
     \end{minipage}
     %
